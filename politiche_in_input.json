@@ -1,0 +1,10 @@
+{
+	"policies":[
+		{
+			"policy": {
+				"condition": "tcp_dst=80",
+				"action": ["AS20"]
+			}
+		}
+	]
+}

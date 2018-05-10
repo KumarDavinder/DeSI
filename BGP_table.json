@@ -1,0 +1,14 @@
+[{
+	"paths": [{
+		"origin": "i",
+		"nexthop": "50.0.0.2",
+		"localpref": "",
+		"metric": "",
+		"aspath": [20],
+		"labels": null,
+		"prefix": "2.0.0.0/8",
+		"bpr": "Only Path",
+		"best": true
+	}],
+	"prefix": "2.0.0.0/8"
+}]

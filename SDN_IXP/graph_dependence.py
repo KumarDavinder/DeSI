@@ -29,7 +29,7 @@ def get_quadruple(rule):
     return quadruple
 
 
-def get_GD(list_rule_action):
+def get_graph_dependence(list_rule_action):
     list_quadruples = []
     GD = nx.DiGraph()
     x = 0
@@ -52,7 +52,7 @@ def get_GD(list_rule_action):
 
 
 def get_dictionary_of_graph_dependence(list_rule_action):
-    graph_dependece = get_GD(list_rule_action)
+    graph_dependece = get_graph_dependence(list_rule_action)
     graph_dependence_dictionary = {}
     for index in range(0, graph_dependece.nodes.__len__()):
         graph_dependence_dictionary.update({index: []})

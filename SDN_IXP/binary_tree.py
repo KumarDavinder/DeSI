@@ -54,8 +54,8 @@ def from_binary_tree_only_and_operations(node, resultAND, left, right):
                 resultAND += l + "_and_" + r + " "
         return resultAND
     else:
-        return from_binary_tree_only_and_operations(node.getLeft(), resultAND, left, right) + " " + \
-               from_binary_tree_only_and_operations(node.getRight(), resultAND, left, right)
+        return from_binary_tree_only_and_operations(node.getLeft(), resultAND, left, right) + " " + from_binary_tree_only_and_operations(node.getRight(), resultAND, left, right)
+
 
 
 

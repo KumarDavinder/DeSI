@@ -1,0 +1,11 @@
+ifconfig eth0 40.0.0.1/30 up
+ifconfig eth3 44.0.0.1/30 up
+
+/etc/init.d/openvswitch-switch start
+
+ovs-vsctl add-br of4
+ovs-vsctl add-port of4 eth1
+ovs-vsctl add-port of4 eth2
+ovs-vsctl add-port of4 eth3
+ovs-vsctl set-controller of4 tcp:40.0.0.2:6633
+ovs-vsctl set bridge of4 protocols=[OpenFlow13]

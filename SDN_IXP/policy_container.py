@@ -83,7 +83,7 @@ def check_j_subset_i_to_cover(quadruples_second, quadruples_first):
             return True
     return False
 
-def get_dict_of_cover(list_rule_action):
+def get_dict_covers(list_rule_action):
     cover_dictionary = {}
     for index in range(0, list_rule_action.__len__()):
         cover_dictionary.update({index: []})
@@ -126,3 +126,4 @@ def get_list_rule_action(inputFileJson):
 
 def get_dict_graph_dependence(list_rule_action):
     return get_dictionary_of_graph_dependence(list_rule_action)
+
